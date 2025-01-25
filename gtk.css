@@ -1,0 +1,31 @@
+/* Прозрачный фон для Thunar
+@import url("resource:///org/gtk/libgtk/css/gtk.css");
+
+
+window {
+    background-image: url('file:///home/ihti/.Обои/blue.jpg');
+    background-size: cover;
+    background-position: center;
+} */
+
+
+
+window { 
+    background-color: rgba(0, 2, 18, 0.6);
+}
+    
+
+
+/* Убираем задний фон у названий папок и файлов */
+.thunar .view, .thunar .view * {
+    background-color: rgba(0, 2, 18, 0.0);
+    color: #ffffff; /* Белый цвет текста */
+    font-weight: bold; /* Жирный шрифт */
+}
+
+/* Задаём стиль для выделенных элементов */
+.thunar .view .selected {
+    background-color: #ffffff ; /* Цвет фона для выделенных элементов */
+    color: #ff0000 ; /* Цвет текста для выделенных элементов */
+}
+
